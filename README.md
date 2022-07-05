@@ -1,4 +1,5 @@
-# IaaC Terraform MS-Azure [Reference](https://learn.hashicorp.com/tutorials/terraform/azure-build)
+# IaaC Terraform MS-Azure 
+[Reference](https://learn.hashicorp.com/tutorials/terraform/azure-build)<br/>
 Installing Azure CLI on MacOs
 ```
 brew update && brew install azure-cli
