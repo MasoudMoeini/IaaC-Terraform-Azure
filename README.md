@@ -26,6 +26,7 @@ Starting Terraform Deployment process
 ``` 
 terraform init
 ```
+```
 terraform fmt
 ```
 ```
