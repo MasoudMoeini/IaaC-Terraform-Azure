@@ -22,3 +22,21 @@ export ARM_SUBSCRIPTION_ID="<SUBSCRIPTION_ID>"
 ```
 export ARM_TENANT_ID="<TENANT_VALUE>"
 ```
+Starting Terraform Deployment process
+``` 
+terraform init
+```
+terraform fmt
+```
+```
+terraform validate
+```
+``` 
+terraform apply
+```
+```
+terraform show
+``` 
+```
+terraform destroy
+```
