@@ -6,7 +6,8 @@ brew update && brew install azure-cli
 ```
 ``` 
 az login
-az account set --subscription {"..id"}
+az account set --subscription {id}
+az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/{id}"
 ```
 Environment Variables Config
 ```
