@@ -6,21 +6,14 @@ brew update && brew install azure-cli
 ```
 ``` 
 az login
+```
+Excluded[
 az account set --subscription {id}
 az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/{id}"
-```
-Environment Variables Config
-```
 export ARM_CLIENT_ID="<APPID_VALUE>"
-```
-```
 export ARM_CLIENT_SECRET="<PASSWORD_VALUE>"
-```
-```
 export ARM_SUBSCRIPTION_ID="<SUBSCRIPTION_ID>"
-```
-```
-export ARM_TENANT_ID="<TENANT_VALUE>"
+export ARM_TENANT_ID="<TENANT_VALUE>"  ]
 ```
 Starting Terraform Deployment process
 ``` 
@@ -31,6 +24,9 @@ terraform fmt
 ```
 ```
 terraform validate
+```
+```
+terraform plan
 ```
 ``` 
 terraform apply
