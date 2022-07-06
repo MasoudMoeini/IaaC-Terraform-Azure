@@ -7,6 +7,7 @@ brew update && brew install azure-cli
 ``` 
 az login
 ```
+```
 Excluded[
 az account set --subscription {id}
 az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/{id}"
