@@ -34,7 +34,7 @@ resource "azurerm_virtual_machine" "example" {
   }
 
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "myosdisk1"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -54,6 +54,7 @@ resource "azurerm_virtual_machine" "example" {
     connection {
       user     = "${local.admin_username}"
       password = "${local.admin_password}"
+      host =  "${azurerm_public_ip.example.ip_address}"
     }
 
     inline = [

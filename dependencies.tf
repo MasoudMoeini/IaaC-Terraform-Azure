@@ -7,7 +7,7 @@ locals {
 
 resource "azurerm_resource_group" "example" {
   name     = "${var.prefix}-resources"
-  location = "${var.location}"
+  location = "westus2"
 }
 
 resource "azurerm_virtual_network" "example" {
