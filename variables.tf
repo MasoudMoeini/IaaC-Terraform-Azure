@@ -1,14 +1,9 @@
-variable "prefix" {
-  description = "The Prefix used for all resources in this example"
-  default = "tfvmex"
-  
+variable "resource_group_name_prefix" {
+  default       = "rg"
+  description   = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
 }
 
-variable "location" {
-  description = "The Azure Region in which the resources in this example should exist"
-  default = "westus2"
-}
-variable "resource_group_name" {
-  default = "myTFResourceGroup"
-  
+variable "resource_group_location" {
+  default       = "westeurope"
+  description   = "Location of the resource group."
 }
